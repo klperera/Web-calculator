@@ -13,6 +13,7 @@ html{
     --LOWER-BG-COLOR: rgb(0, 0, 0);
     --UPPER-BG-COLOR: rgb(40, 39, 39);
     --BTN--BG-COLOR: rgb(67, 67, 67);
+    --HOVER-BTN-BG-COLOR: rgb(121, 121, 121);
     --MAIN-FONT-COLOR: rgb(255, 255, 255);
     --FONT-SIZE: 3rem;
 }
@@ -34,10 +35,16 @@ html{
 #display{
     position: absolute;
     bottom: 0;
-    right: 3%;
+    right: 4%;
+    background-color: var(--UPPER-BG-COLOR);
+    width: 96%;
+    border: none;
+    text-align: right;
+    color: var(--MAIN-FONT-COLOR);
+    font-size: 6rem;
 }
 .lower_screen{
-    width: 100vw;
+    width: 100%;
     height: 70vh;
     background-color: var(--LOWER-BG-COLOR);
     display: grid;
@@ -56,15 +63,19 @@ html{
     cursor: pointer;
 }
 #btn_0{
-
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 90%;
+    border-radius: 40%;
 
 }
-#display{
-    background-color: var(--UPPER-BG-COLOR);
-    width: 97%;
-    border: none;
-    text-align: right;
-    color: var(--MAIN-FONT-COLOR);
-    font-size: 5rem;
+.button:hover{
+    background-color: var(--HOVER-BTN-BG-COLOR) ;
+}
 
+@media only screen and (min-width:768px){
+    .container{
+        width: 50%;
+        margin: 0 auto;
+    }
 }

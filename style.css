@@ -10,5 +10,61 @@ html{
 }
 
 :root{
-    
+    --LOWER-BG-COLOR: rgb(0, 0, 0);
+    --UPPER-BG-COLOR: rgb(40, 39, 39);
+    --BTN--BG-COLOR: rgb(67, 67, 67);
+    --MAIN-FONT-COLOR: rgb(255, 255, 255);
+    --FONT-SIZE: 3rem;
+}
+.container{
+    width: 100%;
+}
+.upper_screen{
+    width: 100%;
+    height: 30vh;
+    background-color: var(--UPPER-BG-COLOR);
+    position: relative;
+}
+#history_btn{
+    float: right;
+    margin: 1rem;
+    width: 70px;
+    height: 70px;
+}
+#display{
+    position: absolute;
+    bottom: 0;
+    right: 3%;
+}
+.lower_screen{
+    width: 100vw;
+    height: 70vh;
+    background-color: var(--LOWER-BG-COLOR);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 2rem;
+    justify-items: center;
+}
+.button{
+    width: 70px;
+    height: 70px;
+    background-color: var(--BTN--BG-COLOR) ;
+    color: var(--MAIN-FONT-COLOR);
+    font-size: var(--FONT-SIZE);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+#btn_0{
+
+
+}
+#display{
+    background-color: var(--UPPER-BG-COLOR);
+    width: 97%;
+    border: none;
+    text-align: right;
+    color: var(--MAIN-FONT-COLOR);
+    font-size: 5rem;
+
 }

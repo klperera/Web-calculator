@@ -11,29 +11,32 @@
     
     <section class="container">
         <div class="upper_screen">
-            <button type="button" class="button" id = "history_btn">◷</button>
-            <input name="display" id="display" placeholder="0"></input>
+            <button type="button" class="button" id = "history_btn" onclick="history()">◷</button>
+            <div class="his_tab">
+                
+            </div>
+            <input name="display" id="display" placeholder="0" readonly></input>
         </div>
         <div class="lower_screen">
-            <button type="button" class="button" onclick="">C</button>
-            <button type="button" class="button">+/-</button>
-            <button type="button" class="button">%</button>
-            <button type="button" class="button">÷</button>
-            <button type="button" class="button">7</button>
-            <button type="button" class="button">8</button>
-            <button type="button" class="button">9</button>
-            <button type="button" class="button">X</button>
-            <button type="button" class="button">4</button>
-            <button type="button" class="button">5</button>
-            <button type="button" class="button">6</button>
-            <button type="button" class="button">-</button>
-            <button type="button" class="button">1</button>
-            <button type="button" class="button">2</button>
-            <button type="button" class="button">3</button>
-            <button type="button" class="button">+</button>
-            <button type="button" class="button" id="btn_0">0</button>
-            <button type="button" class="button">.</button>
-            <button type="button" class="button">=</button>
+            <button type="button" class="button" onclick="clrDisplay()">C</button>
+            <button type="button" class="button" onclick="addToDisplay('-')">+/-</button>
+            <button type="button" class="button" onclick="addToDisplay('%')">%</button>
+            <button type="button" class="button" onclick="addToDisplay('/')">÷</button>
+            <button type="button" class="button" onclick="addToDisplay('7')">7</button>
+            <button type="button" class="button" onclick="addToDisplay('8')">8</button>
+            <button type="button" class="button" onclick="addToDisplay('9')">9</button>
+            <button type="button" class="button" onclick="addToDisplay('*')">X</button>
+            <button type="button" class="button" onclick="addToDisplay('4')">4</button>
+            <button type="button" class="button" onclick="addToDisplay('5')">5</button>
+            <button type="button" class="button" onclick="addToDisplay('6')">6</button>
+            <button type="button" class="button" onclick="addToDisplay('-')">-</button>
+            <button type="button" class="button" onclick="addToDisplay('1')">1</button>
+            <button type="button" class="button" onclick="addToDisplay('2')">2</button>
+            <button type="button" class="button" onclick="addToDisplay('3')">3</button>
+            <button type="button" class="button" onclick="addToDisplay('+')">+</button>
+            <button type="button" class="button" id="btn_0" onclick="addToDisplay('0')">0</button>
+            <button type="button" class="button" onclick="addToDisplay('.')">.</button>
+            <button type="button" class="button" onclick="calculate()">=</button>
             
         </div>
     </section>

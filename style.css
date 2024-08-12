@@ -32,6 +32,11 @@ html{
     width: 70px;
     height: 70px;
 }
+.his_tab{
+    width: 100%;
+    z-index: 1;
+    background-color: aliceblue;
+}
 #display{
     position: absolute;
     bottom: 0;

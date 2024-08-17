@@ -36,7 +36,7 @@ his_btn.addEventListener("click", () =>{
     his_tab.style.display = "block";
 })
 document.addEventListener("keypress", event => {
-    console.log(event.key);
+    console.log(event);
     switch (event.key) {
         case "0":
             addToDisplay('0')
@@ -91,7 +91,6 @@ document.addEventListener("keypress", event => {
             break;
         default:
             console.log("press only a number.");
-            
             break;
     }
 })
